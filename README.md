@@ -1,5 +1,9 @@
 # Modal React
 
+A custom modal (pop-up) in React JS.
+
+Demo - https://modal-8d8x.onrender.com
+
 ## Available Scripts
 
 In the project directory, you can run:
