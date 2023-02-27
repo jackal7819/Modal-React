@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.modalBtn {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #112d49;
+    color: #fff;
+}
+
+.overlay {
+    background: #00000080;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    .modalContainer {
+        max-width: 600px;
+        width: 100%;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        background: #fff;
+        box-shadow: 0 0 18px 0 #000000bf;
+        border-radius: 8px;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            transform: none;
+            width: 100%;
+            height: 100vh;
+        }
+
+        img {
+            width: 250px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .modalRight {
+        width: 100%;
+    }
+
+    .closeBtn {
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+
+        @media (max-width: 576px) {
+            color: #fff;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3rem;
+        padding: 1rem 2 rem;
+    }
+
+    .btnContainer {
+        display: flex;
+        padding: 1rem;
+
+        button {
+            width: 100%;
+            margin: 0.5rem;
+            padding: 16px 0;
+            border: none;
+            color: #fff;
+        }
+    }
+
+    .btnPrimary {
+        background: #411b57;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .btnOutline {
+        background: #a76a99;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+}
