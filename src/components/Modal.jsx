@@ -7,7 +7,7 @@ const Modal = ({ open, onClose }) => {
             <div className='modalContainer'>
                 <img src={nft} alt="nft" />
                 <div className="modalRight">
-                    <i onClick={onClose} class="fa-solid fa-xmark closeBtn"></i>
+                    <i onClick={onClose} className="fa-solid fa-xmark closeBtn"></i>
                     <div className="content">
                         <p>Do you want a</p>
                         <h1>$20 CREDIT</h1>
